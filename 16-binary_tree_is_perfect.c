@@ -3,7 +3,7 @@
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect
  * @tree:  a pointer to the root node of the tree to check
- * 
+ *
  * Return: If tree is NULL, return 0
  * otherwise return is_perfect
 */
@@ -33,8 +33,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	size_t left;
 
 	if (tree == NULL)
-		return (0);
-	if (tree->right == NULL && tree->left == NULL)
 		return (0);
 
 	right = binary_tree_height(tree->right);
